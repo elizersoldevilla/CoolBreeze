@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoolBreeze | Home</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          animation: {
+            fadeIn: 'fadeIn 1.2s ease-in-out',
+          },
+          keyframes: {
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="font-sans text-gray-800">
+  <!-- Navbar -->
+  <header class="bg-blue-700 text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center relative">
+      <h1 class="text-2xl font-bold">CoolBreeze</h1>
+      <button id="menu-toggle" class="md:hidden text-white text-3xl focus:outline-none">☰</button>
+      <nav id="nav-menu" class="hidden md:flex md:space-x-6 flex-col md:flex-row absolute md:static bg-blue-700 md:bg-transparent w-full md:w-auto left-0 top-full md:top-auto mt-4 md:mt-0 p-4 md:p-0 z-50 space-y-4 md:space-y-0">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="services.html" class="hover:underline">Services</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="gallery.html" class="hover:underline">Gallery</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+        <a href="https://www.facebook.com/profile.php?id=61577063099382" target="_blank" class="bg-white text-blue-700 px-4 py-2 rounded hover:bg-blue-100 transition text-center">Book Now</a>
+      </nav>
+    </div>
+  </header>
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-menu');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- Hero Section -->
+  <section class="bg-blue-50 py-20 text-center px-6 animate-fadeIn">
+    <h2 class="text-4xl md:text-5xl font-extrabold mb-4">Breathe Fresh, Live Cool</h2>
+    <p class="text-lg md:text-xl mb-6 max-w-2xl mx-auto">Reliable Aircon Cleaning, Repair, and Installation Across Metro Manila</p>
+    <a href="contact.html" class="bg-blue-700 text-white px-8 py-3 rounded-full hover:bg-blue-800 transition">Book Your Service</a>
+  </section>
+
+  <!-- Featured Services Section -->
+  <section class="py-16 px-6 max-w-7xl mx-auto">
+    <h3 class="text-3xl font-bold text-center mb-12">What We Offer</h3>
+    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 text-center">
+      <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+        <h4 class="text-xl font-semibold mb-2">Aircon Cleaning</h4>
+        <p class="text-gray-600">Deep and preventive cleaning for all aircon types.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+        <h4 class="text-xl font-semibold mb-2">Repair & Maintenance</h4>
+        <p class="text-gray-600">From capacitor replacement to refrigerant recharge, we fix it all.</p>
+      </div>
+      <div class="bg-white rounded-lg shadow-lg p-6 hover:shadow-xl transition">
+        <h4 class="text-xl font-semibold mb-2">Installation & Pull-down</h4>
+        <p class="text-gray-600">Safe, clean, and efficient unit installation and removal.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Choose Us Section -->
+  <section class="bg-gray-100 py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6">Why Choose CoolBreeze?</h3>
+    <div class="max-w-3xl mx-auto text-lg space-y-4">
+      <p><strong>✔ Trained Technicians:</strong> Our team is skilled, experienced, and punctual.</p>
+      <p><strong>✔ Affordable Rates:</strong> We offer competitive pricing with no hidden fees.</p>
+      <p><strong>✔ Quick Response:</strong> We’re ready when you need us — even on short notice.</p>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="bg-blue-600 text-white py-12 px-6 text-center">
+    <h3 class="text-3xl font-bold mb-4">Ready to Feel the Cool Difference?</h3>
+    <p class="mb-6">Message us on Facebook or send a quick form — we're one call away!</p>
+    <a href="contact.html" class="bg-white text-blue-700 px-6 py-3 rounded hover:bg-blue-100 transition font-semibold">Get a Free Estimate</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white text-center py-4">
+    <p>&copy; 2025 CoolBreeze Aircon Services | All rights reserved</p>
+  </footer>
+</body>
+</html>

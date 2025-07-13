@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CoolBreeze | About</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans text-gray-800">
+
+  <!-- Navbar -->
+  <header class="bg-blue-700 text-white shadow-md sticky top-0 z-50">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center relative">
+      <h1 class="text-2xl font-bold">CoolBreeze</h1>
+
+      <!-- Mobile Toggle -->
+      <button id="menu-toggle" class="md:hidden text-white text-3xl focus:outline-none">
+        ☰
+      </button>
+
+      <!-- Navigation -->
+      <nav id="nav-menu" class="hidden md:flex md:space-x-6 flex-col md:flex-row absolute md:static bg-blue-700 md:bg-transparent w-full md:w-auto left-0 top-full md:top-auto mt-4 md:mt-0 p-4 md:p-0 z-50 space-y-4 md:space-y-0">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="services.html" class="hover:underline">Services</a>
+        <a href="about.html" class="hover:underline">About</a>
+        <a href="gallery.html" class="hover:underline">Gallery</a>
+        <a href="contact.html" class="hover:underline">Contact</a>
+        <a href="https://www.facebook.com/profile.php?id=61577063099382" target="_blank" class="bg-white text-blue-700 px-4 py-2 rounded hover:bg-blue-100 transition text-center">Book Now</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- JavaScript for menu toggle -->
+  <script>
+    const toggle = document.getElementById('menu-toggle');
+    const nav = document.getElementById('nav-menu');
+    toggle.addEventListener('click', () => {
+      nav.classList.toggle('hidden');
+    });
+  </script>
+
+  <!-- About Section -->
+  <section class="bg-gray-100 py-16 px-6 text-center">
+    <h3 class="text-3xl font-bold mb-6">Why CoolBreeze?</h3>
+    <p class="max-w-3xl mx-auto text-lg">CoolBreeze Aircon Services is a reliable Filipino-owned company built on honesty, quality work, and fast service. We serve residential homes, condominiums, and offices across Metro Manila. Our team is skilled, equipped, and ready 24/7.</p>
+  </section>
+
+  <!-- Mission and Vision Section -->
+  <section class="py-16 px-6 max-w-5xl mx-auto text-center">
+    <h3 class="text-3xl font-bold mb-6">Our Mission & Vision</h3>
+    <div class="text-lg space-y-8">
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Our Mission</h4>
+        <p>To deliver high-quality and affordable air conditioning services that ensure comfort, efficiency, and satisfaction for every home and business we serve.</p>
+      </div>
+      <div>
+        <h4 class="text-xl font-semibold mb-2">Our Vision</h4>
+        <p>To be the leading aircon service provider in the Philippines, known for reliability, integrity, and excellence in customer care.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action Section -->
+  <section class="bg-blue-600 text-white py-12 px-6 text-center">
+    <h3 class="text-3xl font-bold mb-4">Let’s Work Together</h3>
+    <p class="mb-6">Interested in our services or partnership? Contact us today!</p>
+    <a href="contact.html" class="bg-white text-blue-700 px-6 py-3 rounded hover:bg-blue-100 transition font-semibold">Contact Us</a>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-blue-700 text-white text-center py-4 mt-10">
+    <p>&copy; 2025 CoolBreeze Aircon Services | All rights reserved</p>
+  </footer>
+
+</body>
+</html>
